@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'Inscription Professionnel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-bg"></div>
+      <div class="header-pattern"></div>
+      <div class="container header-content">
+        <div class="logo">
+          <i class="fas fa-user-plus"></i>
+          <span>Zion Center</span>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-home"></i> Accueil</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-info-circle"></i> À propos</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <h1>Formulaire d'Inscription à la retraite d'été</h1>
+        <div class="form-section">
+          <div class="form-container">
+            <form id="registrationForm">
+              <div class="form-group">
+                <label for="lastname">Nom</label>
+                <input
+                  type="text"
+                  id="lastname"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="firstname">Prénom</label>
+                <input
+                  type="text"
+                  id="firstname"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="city">Ville</label>
+                <input type="text" id="city" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label>Genre</label>
+                <div class="radio-group">
+                  <div class="radio-option">
+                    <input
+                      type="radio"
+                      id="male"
+                      name="gender"
+                      value="Homme"
+                      checked
+                    />
+                    <label for="male">Homme</label>
+                  </div>
+                  <div class="radio-option">
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="Femme"
+                    />
+                    <label for="female">Femme</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phone">Numéro de téléphone</label>
+                <input type="tel" id="phone" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control"></textarea>
+              </div>
+              <div id="statusMessage" class="status-message"></div>
+              <button type="submit" class="btn">
+                S'inscrire <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="qr-container">
+            <div id="qrcode"></div>
+            <p class="qr-instructions">
+              <i class="fas fa-info-circle"></i> Scannez ce QR Code pour
+              effectuer votre des frais d'inscription. <br /><strong
+                >+7 985 356 74 95, Cбербанк</strong
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>À propos</h3>
+            <p>
+              Cette page est la plateforme officielle reservée à de d'inscrire
+              des volontaires à la retaire d'été organisée du 16 au 19 Juillet
+              2025 par le Centre International Zion.
+            </p>
+            <div class="social-links">
+              <a href="https://t.me/+zqzytp9LyjdlYWY6"
+                ><i class="fab fa-telegram"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/christian_center_zion?igsh=c2x2NW54ZzNoY2Rr"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <!-- <div class="footer-section">
+            <h3>Liens utiles</h3>
+            <ul>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Conditions d'utilisation</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support technique</a></li>
+            </ul>
+          </div> -->
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kazan, Russie</p>
+            <p><i class="fas fa-phone"></i> +7 987 287 90 71</p>
+            <p><i class="fas fa-envelope"></i> divinbwishe@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Zion Center. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
